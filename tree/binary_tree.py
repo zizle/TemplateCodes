@@ -15,5 +15,24 @@ class Tree(object):
         self.root = None
 
     def add(self, item):
-        pass
+        node = Node(item)
+        if self.root is None:
+            self.root = node
+            return
+        queue = [self.root]
+        while queue:
+            cur_node = queue.pop(0)
+            if cur_node.l_child is None:
+                cur_node.l_child = node
+                return
+            else:
+                queue.append(cur_node.l_child)
+            if cur_node.r_child is None:
+                cur_node.r_child = node
+                return
+            else:
+                queue.append(cur_node.r_child)
+
+
+
 
