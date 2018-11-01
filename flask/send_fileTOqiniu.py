@@ -1,8 +1,5 @@
 # _*_ coding:utf-8 _*_
 
-# _*_ coding:utf-8 _*_
-# _*_ coding:utf-8 _*_
-
 import qiniu
 
 access_key = 'yV4GmNBLOgQK-1Sn3o4jktGLFdFSrlywR2C-hvsW'
